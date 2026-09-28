@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f5f5f5;
+}
+
+
+/* Antet */
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #5b3fd9;
+    color: white;
+}
+
+.site-header h1 {
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    gap: 24px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+
+/* Conținut */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-bottom: 24px;
+    color: #5b3fd9;
+}
+
+
+/* Cardurile destinațiilor */
+
+#destinatii {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+#destinatii h2 {
+    grid-column: 1 / -1;
+}
+
+.card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #5b3fd9;
+}
+
+
+/* Destinația evidențiată */
+
+.card.featured {
+    border: 2px solid #5b3fd9;
+    background-color: #eeeaff;
+}
+
+
+/* Formular */
+
+form {
+    max-width: 600px;
+    padding: 24px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+}
+
+form div {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+select {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #5b3fd9;
+    outline-offset: 1px;
+}
+
+button {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #5b3fd9;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4730ad;
+}
+
+
+/* Recomandări */
+
+#recomandari {
+    padding: 24px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#recomandari li {
+    margin-bottom: 10px;
+}
+
+
+/* Footer */
+
+.site-footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+    .site-header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    main {
+        padding: 25px 15px;
+    }
+}

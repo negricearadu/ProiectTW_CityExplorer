@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Explorer</title>
+    <link rel="stylesheet" href="css/style.css"> </head>
+
+<body>
+    <header class="site-header">
+        <h1>City Explorer</h1>
+
+        <nav class="menu" aria-label="Navigare principală">
+            <a href="#destinatii">Destinații</a>
+            <a href="#planifica">Planifică</a>
+            <a href="#recomandari">Recomandări</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="destinatii">
+            <h2>Destinații</h2>
+
+            <article class="card">
+                <h3>Lisabona</h3>
+                <p><strong>Țara:</strong> Portugalia</p>
+                <p>Un oraș plin de culoare, cunoscut pentru străduțele sale înguste, tramvaiele istorice și priveliștile asupra râului Tejo.</p>
+                <p><strong>Durata recomandată:</strong> 4 zile</p>
+            </article>
+
+            <article class="card">
+                <h3>Paris</h3>
+                <p><strong>Țara:</strong> Franța</p>
+                <p>Capitala Franței oferă obiective celebre, muzee, cafenele și plimbări romantice de-a lungul Senei.</p>
+                <p><strong>Durata recomandată:</strong> 5 zile</p>
+            </article>
+
+            <article class="card">
+                <h3>Roma</h3>
+                <p><strong>Țara:</strong> Italia</p>
+                <p>Un oraș cu o istorie impresionantă, unde pot fi descoperite Colosseumul, Vaticanul și numeroase piețe și fântâni.</p>
+                <p><strong>Durata recomandată:</strong> 4 zile</p>
+            </article>
+
+            <article class="card">
+                <h3>Barcelona</h3>
+                <p><strong>Țara:</strong> Spania</p>
+                <p>Un oraș mediteranean renumit pentru arhitectura lui Antoni Gaudí, plajele sale și atmosfera vibrantă.</p>
+                <p><strong>Durata recomandată:</strong> 4 zile</p>
+            </article>
+
+            <article class="card">
+                <h3>Praga</h3>
+                <p><strong>Țara:</strong> Cehia</p>
+                <p>Praga impresionează prin centrul istoric, Podul Carol, Castelul din Praga și arhitectura sa medievală.</p>
+                <p><strong>Durata recomandată:</strong> 3 zile</p>
+            </article>
+
+        </section>
+
+        <section id="planifica">
+            <h2>Planifică</h2>
+
+            <form action="#" method="get">
+                <div>
+                    <label for="name">Nume</label>
+                    <input id="name" name="name" type="text">
+                </div>
+
+                <div>
+                    <label for="destination">Destinație</label>
+                    <select id="destination" name="destination">
+                    <option value="">Alege...</option>
+                    <option value="Lisabona">Lisabona</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Roma">Roma</option>
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Praga">Praga</option>
+                </select>
+                </div>
+
+                <div>
+                    <label for="days">Număr de zile</label>
+                    <input id="days" name="days" type="number" min="1">
+                </div>
+
+                <button type="submit">Planifică excursia</button>
+            </form>
+        </section>
+
+        <section id="recomandari">
+            <h2>Recomandări</h2>
+
+            <ul>
+                <li>Verifică vremea și pregătește haine potrivite pentru perioada călătoriei.</li>
+                <li>Vizitează obiectivele populare dimineața pentru a evita aglomerația.</li>
+                <li>Încearcă preparatele tradiționale și descoperă restaurantele locale.</li>
+                <li>Folosește transportul public pentru a explora mai ușor orașul.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        Ana Popescu, 2026
+    </footer>
+
+</body>
+
+</html>
