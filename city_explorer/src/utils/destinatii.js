@@ -10,3 +10,6 @@ export const marcheazaVizitat = (list, id) =>
 export const adaugaDestinatie = (list, destinatie) => [...list, destinatie]
 
 export const stergeDestinatie = (list, id) => list.filter((destinatie) => destinatie.id !== id)
+
+export const nr = (numar, cuvant) =>
+  numar % 100 >= 20 ? `${numar} de ${cuvant}` : `${numar} ${cuvant}`

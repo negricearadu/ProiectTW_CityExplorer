@@ -16,17 +16,24 @@ h1 {
 
 .formular {
   display: flex;
+  align-items: flex-start;
   gap: 0.6rem;
   margin-bottom: 1.5rem;
 }
 
-.formular input {
+.camp {
   flex: 1;
+  min-width: 0;
+}
+
+.formular input {
+  width: 100%;
   min-width: 0;
   padding: 0.5rem 0.7rem;
   border: 1px solid #c3c7cf;
   border-radius: 7px;
   background: #fff;
+  box-sizing: border-box;
 }
 
 button {
@@ -85,6 +92,94 @@ button:hover {
   background: #881337;
 }
 
+.stare {
+  padding: 0.8rem;
+  border-radius: 9px;
+  background: #e8efff;
+  color: #3730a3;
+}
+
+.stare.eroare {
+  background: #fcecec;
+  color: #b91c1c;
+}
+
+.formular input.invalid {
+  border-color: #dc2626;
+  background: #fff1f2;
+}
+
+.eroare-camp {
+  margin: 0.25rem 0 0;
+  color: #b91c1c;
+  font-size: 0.8rem;
+}
+
+button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.cautare {
+  margin-bottom: 1.2rem;
+}
+
+.cautare input {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #c3c7cf;
+  border-radius: 7px;
+  font: inherit;
+}
+
+.gol {
+  padding: 1.4rem;
+  border: 1px dashed #9ca3af;
+  border-radius: 9px;
+  color: #6b7280;
+  text-align: center;
+}
+
+.paginare {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.panou {
+  margin-bottom: 1.4rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid #d8dbe0;
+  border-radius: 10px;
+}
+
+.panou h2 {
+  margin: 0 0 0.6rem;
+  font-size: 1.1rem;
+}
+
+.panou label {
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+.panou input {
+  width: 70px;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #c3c7cf;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.panou ul {
+  margin: 0.7rem 0 0;
+  padding-left: 1.1rem;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
 .card.vizitat {
   border-color: #9be4bb;
   background: #effaf1;
@@ -114,7 +209,7 @@ button:hover {
     grid-template-columns: 1fr 1fr;
   }
 
-  .formular input:last-of-type,
+  .formular .camp:last-of-type,
   .formular button {
     grid-column: span 2;
   }

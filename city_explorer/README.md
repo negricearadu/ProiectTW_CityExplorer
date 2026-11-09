@@ -17,10 +17,23 @@ Aplicație React pentru gestionarea destinațiilor de călătorie.
 
 ```bash
 npm install
+npm run server
+```
+
+Într-un al doilea terminal:
+
+```bash
 npm run dev
 ```
 
-Aplicația este disponibilă la `http://localhost:5173`.
+Serverul de date este disponibil la `http://localhost:3001/destinatii`, iar aplicația la `http://localhost:5173`.
+
+Pentru setul mare de date folosit la exercițiul de optimizare:
+
+```bash
+npm run generate
+npx json-server db-mare.json --port 3002
+```
 
 ## Tehnologii
 

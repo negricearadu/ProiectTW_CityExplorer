@@ -2,7 +2,7 @@ import DestinatieCard from './DestinatieCard.jsx'
 
 export default function ListaDestinatii({ destinatii, onToggle, onDelete }) {
   if (destinatii.length === 0) {
-    return <p className="info">Nu există nicio destinație.</p>
+    return <p className="gol">Nu există nicio destinație.</p>
   }
 
   return (
