@@ -4,20 +4,26 @@ Sigur, unul scurt și potrivit pentru proiectul tău:
 
 # City Explorer
 
- Un site simplu pentru explorarea și planificarea excursiilor în diferite orașe.
+Aplicație React pentru gestionarea destinațiilor de călătorie.
 
- ## Funcționalități
+## Funcționalități
 
- - Prezentarea mai multor destinații.
-- Formular pentru planificarea unei excursii.
-- Recomandări pentru călătorie.
-- Design responsive realizat cu CSS Grid și Flexbox.
+- afișează destinațiile într-o grilă responsive;
+- calculează numărul destinațiilor nevizitate și zilele rămase;
+- marchează destinațiile ca vizitate;
+- adaugă și șterge destinații fără reîncărcarea paginii.
 
- ## Tehnologii
+## Pornire
 
- - HTML5
-- CSS3
+```bash
+npm install
+npm run dev
+```
 
- ## Autor
+Aplicația este disponibilă la `http://localhost:5173`.
 
- Ana Popescu — 2026
+## Tehnologii
+
+- React
+- Vite
+- CSS Grid și Flexbox

@@ -1,0 +1,121 @@
+main {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 0 1rem 3rem;
+}
+
+h1 {
+  margin: 0 0 0.4rem;
+  font-size: 1.9rem;
+}
+
+.rezumat {
+  margin: 0 0 1.2rem;
+  color: #4b5563;
+}
+
+.formular {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.formular input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #c3c7cf;
+  border-radius: 7px;
+  background: #fff;
+}
+
+button {
+  padding: 0.5rem 0.9rem;
+  border: none;
+  border-radius: 7px;
+  background: #5b3fd9;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4930bd;
+}
+
+.lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  padding: 0.9rem 1rem;
+  border: 1px solid #d8dbe0;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.card h3 {
+  margin: 0 0 0.15rem;
+}
+
+.card .tara,
+.card .zile {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.card button {
+  flex: 1;
+  min-width: 0;
+}
+
+.card .button-delete {
+  background: #9f1239;
+}
+
+.card .button-delete:hover {
+  background: #881337;
+}
+
+.card.vizitat {
+  border-color: #9be4bb;
+  background: #effaf1;
+}
+
+.card.vizitat button:not(.button-delete) {
+  background: #16a34a;
+}
+
+.card.vizitat button:not(.button-delete):hover {
+  background: #15803d;
+}
+
+.info {
+  padding: 0.8rem;
+  border-radius: 9px;
+  background: #f3f4f6;
+}
+
+@media (max-width: 600px) {
+  main {
+    margin: 1.5rem auto;
+  }
+
+  .formular {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .formular input:last-of-type,
+  .formular button {
+    grid-column: span 2;
+  }
+}
